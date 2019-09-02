@@ -1,6 +1,11 @@
 pragma solidity 0.4.24;
 // File: contracts/ChainlinkClient.sol
 import './Chainlink.sol';
+import './ENSInterface.sol';
+import './ENSResolver.sol';
+import './LinkTokenInterface.sol';
+import './ChainlinkRequestInterface.sol';
+import './PointerInterface.sol';
 
 /**
  * @title The ChainlinkClient contract
