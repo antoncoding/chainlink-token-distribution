@@ -21,27 +21,27 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// File: contracts/interfaces/PointerInterface.sol\n\npragma solidity 0.4.24;\n\ninterface PointerInterface {\n  function getAddress() external view returns (address);\n}",
+  "source": "// File: contracts/interfaces/PointerInterface.sol\n\npragma solidity 0.4.24;\n\ninterface PointerInterface {\n    function getAddress() external view returns (address);\n}",
   "sourcePath": "/Users/antonasso/programming/posiedon/contracts/PointerInterface.sol",
   "ast": {
     "absolutePath": "/Users/antonasso/programming/posiedon/contracts/PointerInterface.sol",
     "exportedSymbols": {
       "PointerInterface": [
-        1827
+        956
       ]
     },
-    "id": 1828,
+    "id": 957,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1821,
+        "id": 950,
         "literals": [
           "solidity",
           "0.4",
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "52:23:10"
+        "src": "52:23:7"
       },
       {
         "baseContracts": [],
@@ -49,9 +49,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1827,
+        "id": 956,
         "linearizedBaseContracts": [
-          1827
+          956
         ],
         "name": "PointerInterface",
         "nodeType": "ContractDefinition",
@@ -59,7 +59,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1826,
+            "id": 955,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,23 +67,23 @@
             "name": "getAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1822,
+              "id": 951,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "127:2:10"
+              "src": "129:2:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1825,
+              "id": 954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1824,
+                  "id": 953,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1826,
-                  "src": "153:7:10",
+                  "scope": 955,
+                  "src": "155:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +91,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1823,
+                    "id": 952,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "153:7:10",
+                    "src": "155:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -104,40 +104,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "152:9:10"
+              "src": "154:9:7"
             },
-            "scope": 1827,
-            "src": "108:54:10",
+            "scope": 956,
+            "src": "110:54:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1828,
-        "src": "77:87:10"
+        "scope": 957,
+        "src": "77:89:7"
       }
     ],
-    "src": "52:112:10"
+    "src": "52:114:7"
   },
   "legacyAST": {
     "absolutePath": "/Users/antonasso/programming/posiedon/contracts/PointerInterface.sol",
     "exportedSymbols": {
       "PointerInterface": [
-        1827
+        956
       ]
     },
-    "id": 1828,
+    "id": 957,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1821,
+        "id": 950,
         "literals": [
           "solidity",
           "0.4",
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "52:23:10"
+        "src": "52:23:7"
       },
       {
         "baseContracts": [],
@@ -145,9 +145,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1827,
+        "id": 956,
         "linearizedBaseContracts": [
-          1827
+          956
         ],
         "name": "PointerInterface",
         "nodeType": "ContractDefinition",
@@ -155,7 +155,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1826,
+            "id": 955,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -163,23 +163,23 @@
             "name": "getAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1822,
+              "id": 951,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "127:2:10"
+              "src": "129:2:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1825,
+              "id": 954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1824,
+                  "id": 953,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1826,
-                  "src": "153:7:10",
+                  "scope": 955,
+                  "src": "155:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -187,10 +187,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1823,
+                    "id": 952,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "153:7:10",
+                    "src": "155:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -200,20 +200,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "152:9:10"
+              "src": "154:9:7"
             },
-            "scope": 1827,
-            "src": "108:54:10",
+            "scope": 956,
+            "src": "110:54:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1828,
-        "src": "77:87:10"
+        "scope": 957,
+        "src": "77:89:7"
       }
     ],
-    "src": "52:112:10"
+    "src": "52:114:7"
   },
   "compiler": {
     "name": "solc",
@@ -221,7 +221,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.14",
-  "updatedAt": "2019-09-03T01:47:50.800Z",
+  "updatedAt": "2019-09-03T06:09:52.737Z",
   "devdoc": {
     "methods": {}
   },
