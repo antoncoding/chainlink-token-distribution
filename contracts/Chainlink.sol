@@ -3,8 +3,8 @@
 pragma solidity 0.4.24;
 
 import './Buffer.sol';
-import './SafeMath.sol';
 import './CBOR.sol';
+import 'zeppelin-solidity/contracts/math/SafeMath.sol';
 
 /**
  * @title Library for common Chainlink functions
