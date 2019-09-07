@@ -28,8 +28,8 @@ contract ATestnetConsumer is ChainlinkClient, Ownable {
         bytes32 indexed market
     );
 
-    constructor() Ownable() public {
-        setPublicChainlinkToken();
+    constructor(address _tokenAddress) Ownable() public {
+        setChainlinkToken(_tokenAddress);
     }
 
     function requestEthereumPrice(address _oracle, string _jobId)
