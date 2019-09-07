@@ -34,7 +34,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 1794,
+        "sourceUnit": 1807,
         "src": "85:49:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -45,7 +45,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 3225,
+        "sourceUnit": 3296,
         "src": "135:47:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -56,7 +56,7 @@
         "id": 4,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 2284,
+        "sourceUnit": 2297,
         "src": "183:59:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -124,10 +124,10 @@
               "id": 8,
               "name": "CBOR",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3224,
+              "referencedDeclaration": 3295,
               "src": "448:4:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CBOR_$3224",
+                "typeIdentifier": "t_contract$_CBOR_$3295",
                 "typeString": "library CBOR"
               }
             },
@@ -138,10 +138,10 @@
               "id": 9,
               "name": "Buffer.buffer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1329,
+              "referencedDeclaration": 1342,
               "src": "457:13:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                 "typeString": "struct Buffer.buffer"
               }
             }
@@ -264,7 +264,7 @@
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                  "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                   "typeString": "struct Buffer.buffer"
                 },
                 "typeName": {
@@ -272,10 +272,10 @@
                   "id": 19,
                   "name": "Buffer.buffer",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 1329,
+                  "referencedDeclaration": 1342,
                   "src": "613:13:0",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                    "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                     "typeString": "struct Buffer.buffer"
                   }
                 },
@@ -324,7 +324,7 @@
                         "referencedDeclaration": 20,
                         "src": "1246:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -345,7 +345,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -359,10 +359,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1234:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -373,10 +373,10 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1364,
+                      "referencedDeclaration": 1377,
                       "src": "1234:11:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -390,7 +390,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1234:42:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -803,7 +803,7 @@
                         "referencedDeclaration": 20,
                         "src": "1777:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -840,7 +840,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -854,10 +854,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1765:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -868,10 +868,10 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1364,
+                      "referencedDeclaration": 1377,
                       "src": "1765:11:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -885,7 +885,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1765:35:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -922,7 +922,7 @@
                         "referencedDeclaration": 20,
                         "src": "1824:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -943,7 +943,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -957,10 +957,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1810:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -971,10 +971,10 @@
                       "lValueRequested": false,
                       "memberName": "append",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1565,
+                      "referencedDeclaration": 1578,
                       "src": "1810:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,bytes memory) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -988,7 +988,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1810:30:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -1136,7 +1136,7 @@
                         "referencedDeclaration": 20,
                         "src": "2161:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1147,10 +1147,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2161:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -1222,7 +1222,7 @@
                         "referencedDeclaration": 20,
                         "src": "2198:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1233,10 +1233,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2198:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -1424,7 +1424,7 @@
                         "referencedDeclaration": 20,
                         "src": "2550:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1435,10 +1435,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2550:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -1510,7 +1510,7 @@
                         "referencedDeclaration": 20,
                         "src": "2587:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1521,10 +1521,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeBytes",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3165,
+                      "referencedDeclaration": 3236,
                       "src": "2587:20:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_bytes_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_bytes_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,bytes memory) pure"
                       }
                     },
@@ -1712,7 +1712,7 @@
                         "referencedDeclaration": 20,
                         "src": "2939:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1723,10 +1723,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2939:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -1798,7 +1798,7 @@
                         "referencedDeclaration": 20,
                         "src": "2976:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -1809,10 +1809,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeInt",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3144,
+                      "referencedDeclaration": 3215,
                       "src": "2976:18:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_int256_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_int256_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,int256) pure"
                       }
                     },
@@ -2000,7 +2000,7 @@
                         "referencedDeclaration": 20,
                         "src": "3330:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -2011,10 +2011,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "3330:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -2086,7 +2086,7 @@
                         "referencedDeclaration": 20,
                         "src": "3367:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -2097,10 +2097,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeUInt",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3111,
+                      "referencedDeclaration": 3182,
                       "src": "3367:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure"
                       }
                     },
@@ -2288,7 +2288,7 @@
                         "referencedDeclaration": 20,
                         "src": "3752:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -2299,10 +2299,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "3752:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -2355,7 +2355,7 @@
                         "referencedDeclaration": 20,
                         "src": "3789:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -2366,10 +2366,10 @@
                       "lValueRequested": false,
                       "memberName": "startArray",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3201,
+                      "referencedDeclaration": 3272,
                       "src": "3789:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory) pure"
                       }
                     },
@@ -2474,7 +2474,7 @@
                               "referencedDeclaration": 20,
                               "src": "3879:8:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                                "typeIdentifier": "t_struct$_buffer_$1342_memory",
                                 "typeString": "struct Buffer.buffer memory"
                               }
                             },
@@ -2485,10 +2485,10 @@
                             "lValueRequested": false,
                             "memberName": "encodeString",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3190,
+                            "referencedDeclaration": 3261,
                             "src": "3879:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                              "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                               "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                             }
                           },
@@ -2696,7 +2696,7 @@
                         "referencedDeclaration": 20,
                         "src": "3932:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -2707,10 +2707,10 @@
                       "lValueRequested": false,
                       "memberName": "endSequence",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3223,
+                      "referencedDeclaration": 3294,
                       "src": "3932:20:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory) pure"
                       }
                     },
@@ -2885,7 +2885,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 1794,
+        "sourceUnit": 1807,
         "src": "85:49:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2896,7 +2896,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 3225,
+        "sourceUnit": 3296,
         "src": "135:47:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2907,7 +2907,7 @@
         "id": 4,
         "nodeType": "ImportDirective",
         "scope": 250,
-        "sourceUnit": 2284,
+        "sourceUnit": 2297,
         "src": "183:59:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2975,10 +2975,10 @@
               "id": 8,
               "name": "CBOR",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3224,
+              "referencedDeclaration": 3295,
               "src": "448:4:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CBOR_$3224",
+                "typeIdentifier": "t_contract$_CBOR_$3295",
                 "typeString": "library CBOR"
               }
             },
@@ -2989,10 +2989,10 @@
               "id": 9,
               "name": "Buffer.buffer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1329,
+              "referencedDeclaration": 1342,
               "src": "457:13:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                 "typeString": "struct Buffer.buffer"
               }
             }
@@ -3115,7 +3115,7 @@
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                  "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                   "typeString": "struct Buffer.buffer"
                 },
                 "typeName": {
@@ -3123,10 +3123,10 @@
                   "id": 19,
                   "name": "Buffer.buffer",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 1329,
+                  "referencedDeclaration": 1342,
                   "src": "613:13:0",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_buffer_$1329_storage_ptr",
+                    "typeIdentifier": "t_struct$_buffer_$1342_storage_ptr",
                     "typeString": "struct Buffer.buffer"
                   }
                 },
@@ -3175,7 +3175,7 @@
                         "referencedDeclaration": 20,
                         "src": "1246:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -3196,7 +3196,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -3210,10 +3210,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1234:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -3224,10 +3224,10 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1364,
+                      "referencedDeclaration": 1377,
                       "src": "1234:11:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -3241,7 +3241,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1234:42:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -3654,7 +3654,7 @@
                         "referencedDeclaration": 20,
                         "src": "1777:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -3691,7 +3691,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -3705,10 +3705,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1765:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -3719,10 +3719,10 @@
                       "lValueRequested": false,
                       "memberName": "init",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1364,
+                      "referencedDeclaration": 1377,
                       "src": "1765:11:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -3736,7 +3736,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1765:35:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -3773,7 +3773,7 @@
                         "referencedDeclaration": 20,
                         "src": "1824:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -3794,7 +3794,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         },
                         {
@@ -3808,10 +3808,10 @@
                         "name": "Buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1793,
+                        "referencedDeclaration": 1806,
                         "src": "1810:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1793_$",
+                          "typeIdentifier": "t_type$_t_contract$_Buffer_$1806_$",
                           "typeString": "type(library Buffer)"
                         }
                       },
@@ -3822,10 +3822,10 @@
                       "lValueRequested": false,
                       "memberName": "append",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1565,
+                      "referencedDeclaration": 1578,
                       "src": "1810:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_bytes_memory_ptr_$returns$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,bytes memory) pure returns (struct Buffer.buffer memory)"
                       }
                     },
@@ -3839,7 +3839,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1810:30:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_buffer_$1329_memory_ptr",
+                      "typeIdentifier": "t_struct$_buffer_$1342_memory_ptr",
                       "typeString": "struct Buffer.buffer memory"
                     }
                   },
@@ -3987,7 +3987,7 @@
                         "referencedDeclaration": 20,
                         "src": "2161:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -3998,10 +3998,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2161:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -4073,7 +4073,7 @@
                         "referencedDeclaration": 20,
                         "src": "2198:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4084,10 +4084,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2198:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -4275,7 +4275,7 @@
                         "referencedDeclaration": 20,
                         "src": "2550:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4286,10 +4286,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2550:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -4361,7 +4361,7 @@
                         "referencedDeclaration": 20,
                         "src": "2587:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4372,10 +4372,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeBytes",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3165,
+                      "referencedDeclaration": 3236,
                       "src": "2587:20:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_bytes_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_bytes_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,bytes memory) pure"
                       }
                     },
@@ -4563,7 +4563,7 @@
                         "referencedDeclaration": 20,
                         "src": "2939:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4574,10 +4574,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "2939:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -4649,7 +4649,7 @@
                         "referencedDeclaration": 20,
                         "src": "2976:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4660,10 +4660,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeInt",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3144,
+                      "referencedDeclaration": 3215,
                       "src": "2976:18:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_int256_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_int256_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,int256) pure"
                       }
                     },
@@ -4851,7 +4851,7 @@
                         "referencedDeclaration": 20,
                         "src": "3330:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4862,10 +4862,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "3330:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -4937,7 +4937,7 @@
                         "referencedDeclaration": 20,
                         "src": "3367:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -4948,10 +4948,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeUInt",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3111,
+                      "referencedDeclaration": 3182,
                       "src": "3367:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_uint256_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,uint256) pure"
                       }
                     },
@@ -5139,7 +5139,7 @@
                         "referencedDeclaration": 20,
                         "src": "3752:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -5150,10 +5150,10 @@
                       "lValueRequested": false,
                       "memberName": "encodeString",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3190,
+                      "referencedDeclaration": 3261,
                       "src": "3752:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                       }
                     },
@@ -5206,7 +5206,7 @@
                         "referencedDeclaration": 20,
                         "src": "3789:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -5217,10 +5217,10 @@
                       "lValueRequested": false,
                       "memberName": "startArray",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3201,
+                      "referencedDeclaration": 3272,
                       "src": "3789:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory) pure"
                       }
                     },
@@ -5325,7 +5325,7 @@
                               "referencedDeclaration": 20,
                               "src": "3879:8:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                                "typeIdentifier": "t_struct$_buffer_$1342_memory",
                                 "typeString": "struct Buffer.buffer memory"
                               }
                             },
@@ -5336,10 +5336,10 @@
                             "lValueRequested": false,
                             "memberName": "encodeString",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 3190,
+                            "referencedDeclaration": 3261,
                             "src": "3879:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                              "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$_t_string_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                               "typeString": "function (struct Buffer.buffer memory,string memory) pure"
                             }
                           },
@@ -5547,7 +5547,7 @@
                         "referencedDeclaration": 20,
                         "src": "3932:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_buffer_$1329_memory",
+                          "typeIdentifier": "t_struct$_buffer_$1342_memory",
                           "typeString": "struct Buffer.buffer memory"
                         }
                       },
@@ -5558,10 +5558,10 @@
                       "lValueRequested": false,
                       "memberName": "endSequence",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3223,
+                      "referencedDeclaration": 3294,
                       "src": "3932:20:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1329_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1329_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_buffer_$1342_memory_ptr_$returns$__$bound_to$_t_struct$_buffer_$1342_memory_ptr_$",
                         "typeString": "function (struct Buffer.buffer memory) pure"
                       }
                     },
@@ -5716,7 +5716,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.14",
-  "updatedAt": "2019-09-07T03:47:49.156Z",
+  "updatedAt": "2019-09-07T14:01:07.074Z",
   "devdoc": {
     "methods": {},
     "title": "Library for common Chainlink functions"
