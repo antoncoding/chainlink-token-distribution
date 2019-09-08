@@ -6,30 +6,42 @@ import "./ChainlinkClient.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 
-contract ATestnetConsumer is ChainlinkClient, Ownable {
+contract PoseidonNetwork is ChainlinkClient, Ownable {
     uint256 constant private ORACLE_PAYMENT = 1 * LINK; // solium-disable-line zeppelin/no-arithmetic-operations
 
     uint256 public currentPrice;
-    int256 public changeDay;
     bytes32 public lastMarket;
+
+    event RequestNodeStatusFulfilled(
+        bytes32 indexed requestId,
+        address indexed superNode,
+        bytes32 witness,
+        uint256 networkPower,
+        uint256 nodePower
+    );
 
     event RequestEthereumPriceFulfilled(
         bytes32 indexed requestId,
         uint256 indexed price
     );
 
-    event RequestEthereumChangeFulfilled(
-        bytes32 indexed requestId,
-        int256 indexed change
-    );
-
-    event RequestEthereumLastMarket(
-        bytes32 indexed requestId,
-        bytes32 indexed market
-    );
-
     constructor(address _tokenAddress) Ownable() public {
         setChainlinkToken(_tokenAddress);
+    }
+
+    function requestWithdrawQQQToken(address _oracle, string _jobId)
+        public
+    {
+        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.distributeQQQToken.selector);
+        req.add("url", "https://api.poseidonnetwork.com/status");
+        sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
+    }
+
+    function distributeQQQToken(bytes32 _requestId, address _superNode, bytes32 _witness, uint256 _networkPower, uint256 _nodePower)
+        public
+        recordChainlinkFulfillment(_requestId)
+    {
+        emit RequestNodeStatusFulfilled(_requestId, _superNode, _witness, _networkPower, _nodePower);
     }
 
     function requestEthereumPrice(address _oracle, string _jobId)
@@ -43,54 +55,12 @@ contract ATestnetConsumer is ChainlinkClient, Ownable {
         sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
     }
 
-    function requestEthereumChange(address _oracle, string _jobId)
-        public
-        onlyOwner
-    {
-        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.fulfillEthereumChange.selector);
-        req.add("url", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
-        req.add("path", "RAW.ETH.USD.CHANGEPCTDAY");
-        req.addInt("times", 1000000000);
-        sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
-    }
-
-    function requestEthereumLastMarket(address _oracle, string _jobId)
-        public
-        onlyOwner
-    {
-        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.fulfillEthereumLastMarket.selector);
-        req.add("url", "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD");
-        string[] memory path = new string[](4);
-        path[0] = "RAW";
-        path[1] = "ETH";
-        path[2] = "USD";
-        path[3] = "LASTMARKET";
-        req.addStringArray("path", path);
-        sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
-    }
-
     function fulfillEthereumPrice(bytes32 _requestId, uint256 _price)
         public
         recordChainlinkFulfillment(_requestId)
     {
         emit RequestEthereumPriceFulfilled(_requestId, _price);
         currentPrice = _price;
-    }
-
-    function fulfillEthereumChange(bytes32 _requestId, int256 _change)
-        public
-        recordChainlinkFulfillment(_requestId)
-    {
-        emit RequestEthereumChangeFulfilled(_requestId, _change);
-        changeDay = _change;
-    }
-
-    function fulfillEthereumLastMarket(bytes32 _requestId, bytes32 _market)
-        public
-        recordChainlinkFulfillment(_requestId)
-    {
-        emit RequestEthereumLastMarket(_requestId, _market);
-        lastMarket = _market;
     }
 
     function getChainlinkToken() public view returns (address) {
