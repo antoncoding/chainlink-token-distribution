@@ -10,7 +10,6 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
     uint256 constant private ORACLE_PAYMENT = 1 * LINK; // solium-disable-line zeppelin/no-arithmetic-operations
 
     uint256 public currentPrice;
-    bytes32 public lastMarket;
 
     event RequestNodeStatusFulfilled(
         bytes32 indexed requestId,
