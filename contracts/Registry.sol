@@ -14,16 +14,15 @@ contract PoseidonRegistry is Ownable {
         qqqToken = IERC20(_tokenAddress);
     }
 
-    function registerSuperNode (
-        string _apiEndpoint,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    )
-    public
-    {
+    /**
+     * @param _apiEndpoint the API endpoint want to register as super node.
+     * @param _v signature v value from contract owner.
+     * @param _r signature r value from contract owner.
+     * @param _s signature s value from contract owner.
+     */
+    function registerSuperNode (string _apiEndpoint, uint8 _v, bytes32 _r, bytes32 _s) public {
         bytes32 messageHash = keccak256(abi.encodePacked(msg.sender, _apiEndpoint));
-        require(ecrecover(messageHash, v, r, s) == owner(), "Witness validation failed.");
+        require(ecrecover(messageHash, _v, _r, _s) == owner(), "Witness validation failed.");
         apiEndpoints[msg.sender] = _apiEndpoint;
     }
 }
