@@ -4,11 +4,12 @@ pragma solidity 0.4.24;
 
 import "./ChainlinkClient.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "./RegistryInterface.sol";
 
 
 contract PoseidonNetwork is ChainlinkClient, Ownable {
     uint256 constant private ORACLE_PAYMENT = 1 * LINK; // solium-disable-line zeppelin/no-arithmetic-operations
-
+    RegistryInterface private registry;
     uint256 public currentPrice;
 
     event RequestNodeStatusFulfilled(
@@ -28,11 +29,16 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         setChainlinkToken(_tokenAddress);
     }
 
+    function setRegistryContract(address _registryContract) public onlyOwner {
+        registry = RegistryInterface(_registryContract);
+    }
+
     function requestWithdrawQQQToken(address _oracle, string _jobId)
         public
     {
         Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.distributeQQQToken.selector);
-        req.add("url", "https://api.poseidonnetwork.com/status");
+        string memory apiEndpoint = registry.selectSuperNode();
+        req.add("url", apiEndpoint);
         sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
     }
 
