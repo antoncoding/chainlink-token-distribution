@@ -8,8 +8,8 @@ import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 contract PoseidonRegistry is Ownable {
     using SafeMath for uint256;
 
-    address[] superNodes;
-    mapping(address => string) private apiEndpoints;
+    address[] public superNodes;
+    mapping(address => string) public apiEndpoints;
     IERC20 private qqqToken;
 
     constructor (address _tokenAddress) public {
@@ -17,16 +17,18 @@ contract PoseidonRegistry is Ownable {
     }
 
     /**
-     * @param _apiEndpoint the API endpoint want to register as super node.
+     * @dev register a api endpoint to become a supernode.
+     * @param _apiEndpoint the API endpoint providing network info.
      * @param _v signature v value from contract owner.
      * @param _r signature r value from contract owner.
      * @param _s signature s value from contract owner.
      */
-    function registerSuperNode(string _apiEndpoint, uint8 _v, bytes32 _r, bytes32 _s) public {
+    function registerSuperNode(string _apiEndpoint, uint8 _v, bytes32 _r, bytes32 _s) public returns (bool success) {
         bytes32 messageHash = keccak256(abi.encodePacked(msg.sender, _apiEndpoint));
         require(ecrecover(messageHash, _v, _r, _s) == owner(), "Witness validation failed.");
         superNodes.push(msg.sender);
         apiEndpoints[msg.sender] = _apiEndpoint;
+        success = true;
     }
 
     /**
