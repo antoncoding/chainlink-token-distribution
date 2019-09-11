@@ -10,19 +10,13 @@ import "./RegistryInterface.sol";
 contract PoseidonNetwork is ChainlinkClient, Ownable {
     uint256 constant private ORACLE_PAYMENT = 1 * LINK; // solium-disable-line zeppelin/no-arithmetic-operations
     RegistryInterface private registry;
-    uint256 public currentPrice;
 
-    event RequestNodeStatusFulfilled(
+    event RequestNetworkStatusFulfilled(
         bytes32 indexed requestId,
         address indexed superNode,
         bytes32 witness,
         uint256 networkPower,
         uint256 nodePower
-    );
-
-    event RequestEthereumPriceFulfilled(
-        bytes32 indexed requestId,
-        uint256 indexed price
     );
 
     constructor(address _tokenAddress) Ownable() public {
@@ -46,26 +40,7 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         public
         recordChainlinkFulfillment(_requestId)
     {
-        emit RequestNodeStatusFulfilled(_requestId, _superNode, _witness, _networkPower, _nodePower);
-    }
-
-    function requestEthereumPrice(address _oracle, string _jobId)
-        public
-        onlyOwner
-    {
-        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.fulfillEthereumPrice.selector);
-        req.add("url", "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD");
-        req.add("path", "USD");
-        req.addInt("times", 100);
-        sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
-    }
-
-    function fulfillEthereumPrice(bytes32 _requestId, uint256 _price)
-        public
-        recordChainlinkFulfillment(_requestId)
-    {
-        emit RequestEthereumPriceFulfilled(_requestId, _price);
-        currentPrice = _price;
+        emit RequestNetworkStatusFulfilled(_requestId, _superNode, _witness, _networkPower, _nodePower);
     }
 
     function getChainlinkToken() public view returns (address) {
