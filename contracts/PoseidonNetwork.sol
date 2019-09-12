@@ -5,11 +5,13 @@ pragma solidity 0.4.24;
 import "./ChainlinkClient.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 import "./RegistryInterface.sol";
+import "./PoseidonTokenInterface.sol";
 
 
 contract PoseidonNetwork is ChainlinkClient, Ownable {
     uint256 constant private ORACLE_PAYMENT = 1 * LINK; // solium-disable-line zeppelin/no-arithmetic-operations
     RegistryInterface private registry;
+    PoseidonTokenInterface private poseidonToken;
 
     event RequestNetworkStatusFulfilled(
         bytes32 indexed requestId,
@@ -19,8 +21,9 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         uint256 nodePower
     );
 
-    constructor(address _tokenAddress) Ownable() public {
-        setChainlinkToken(_tokenAddress);
+    constructor(address _linkTokenAddress, address _poseidonTokenAddess) Ownable() public {
+        setChainlinkToken(_linkTokenAddress);
+        setChainlinkToken(_poseidonTokenAddess);
     }
 
     function setRegistryContract(address _registryContract) public onlyOwner {
@@ -50,6 +53,14 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
     function withdrawLink() public onlyOwner {
         LinkTokenInterface link = LinkTokenInterface(chainlinkTokenAddress());
         require(link.transfer(msg.sender, link.balanceOf(address(this))), "Unable to transfer");
+    }
+
+    /**
+    * @notice Sets the Poseidon token address
+    * @param _link The address of the LINK token contract
+    */
+    function setChainlinkToken(address _link) internal {
+        poseidonToken = PoseidonTokenInterface(_link);
     }
 
     function stringToBytes32(string memory source) private pure returns (bytes32 result) {
