@@ -17,7 +17,7 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         bytes32 indexed requestId,
         address indexed superNode,
         bytes32 witness,
-        int256 amount
+        uint256 amount
     );
 
     constructor(address _linkTokenAddress, address _poseidonTokenAddess) Ownable() public {
@@ -38,11 +38,11 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
     }
 
-    function distributeToken(bytes32 _requestId, address _superNode, bytes32 _witness, int256 _amount)
+    function distributeToken(bytes32 _requestId, address _superNode, bytes32 _witness, uint256 _amount)
         public
         recordChainlinkFulfillment(_requestId)
     {
-        poseidonToken.transfer(_superNode, 100);
+        poseidonToken.transfer(_superNode, _amount);
         emit RequestNetworkStatusFulfilled(_requestId, _superNode, _witness, _amount);
 
     }
