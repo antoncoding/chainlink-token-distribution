@@ -27,16 +27,16 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
         registry = RegistryInterface(_registryContract);
     }
 
-    function requestWithdrawQQQToken(address _oracle, string _jobId)
+    function requestWithdrawToken(address _oracle, string _jobId)
         public
     {
-        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.distributeQQQToken.selector);
+        Chainlink.Request memory req = buildChainlinkRequest(stringToBytes32(_jobId), this, this.distributeToken.selector);
         string memory apiEndpoint = registry.selectSuperNode();
         req.add("url", apiEndpoint);
         sendChainlinkRequestTo(_oracle, req, ORACLE_PAYMENT);
     }
 
-    function distributeQQQToken(bytes32 _requestId, address _superNode, bytes32 _witness, uint256 _networkPower, uint256 _nodePower)
+    function distributeToken(bytes32 _requestId, address _superNode, bytes32 _witness, uint256 _networkPower, uint256 _nodePower)
         public
         recordChainlinkFulfillment(_requestId)
     {
