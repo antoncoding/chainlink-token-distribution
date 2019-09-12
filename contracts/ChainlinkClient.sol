@@ -206,6 +206,15 @@ contract ChainlinkClient {
     }
 
     /**
+    * @notice Ensures that the fulfillment is valid for this contract
+    * @dev Use if the contract developer prefers methods instead of modifiers for validation
+    * @param _requestId The request ID for fulfillment
+    */
+    function validateChainlinkCallback(bytes32 _requestId) internal recordChainlinkFulfillment(_requestId) {
+      // solium-disable-previous-line no-empty-blocks
+    }
+
+    /**
     * @notice Encodes the request to be sent to the oracle contract
     * @dev The Chainlink node expects values to be in order for the request to be picked up. Order of types
     * will be validated in the oracle contract.
@@ -228,17 +237,6 @@ contract ChainlinkClient {
         ARGS_VERSION,
         _req.buf.buf);
     }
-
-    /**
-    * @notice Ensures that the fulfillment is valid for this contract
-    * @dev Use if the contract developer prefers methods instead of modifiers for validation
-    * @param _requestId The request ID for fulfillment
-    */
-    // function validateChainlinkCallback(bytes32 _requestId)
-    //     internal
-    //     recordChainlinkFulfillment(_requestId)
-    //    // solium-disable-next-line no-empty-blocks
-    // {}
 
     /**
     * @dev Reverts if the sender is not the oracle of the request.
