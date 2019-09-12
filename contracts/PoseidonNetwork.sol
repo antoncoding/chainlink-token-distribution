@@ -23,7 +23,7 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
 
     constructor(address _linkTokenAddress, address _poseidonTokenAddess) Ownable() public {
         setChainlinkToken(_linkTokenAddress);
-        setChainlinkToken(_poseidonTokenAddess);
+        setPoseidonToken(_poseidonTokenAddess);
     }
 
     function setRegistryContract(address _registryContract) public onlyOwner {
@@ -59,7 +59,7 @@ contract PoseidonNetwork is ChainlinkClient, Ownable {
     * @notice Sets the Poseidon token address
     * @param _link The address of the LINK token contract
     */
-    function setChainlinkToken(address _link) internal {
+    function setPoseidonToken(address _link) internal {
         poseidonToken = PoseidonTokenInterface(_link);
     }
 
